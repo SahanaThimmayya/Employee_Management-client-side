@@ -1,0 +1,372 @@
+/* General styling for the employee list container */
+.employee-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.add-employee-button {
+  padding: 10px 20px;
+  background-color: #33722d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: -35px;
+  margin-right: 450px;
+}
+
+.add-employee-button:hover {
+  background-color: #555;
+}
+
+/* Employee table styling */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+margin-top: 10px;
+}
+
+.employee-table th, .employee-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+ 
+}
+.employee-table th {
+  background-color: #afa9b7;
+  color: #333;
+}
+
+
+
+.employee-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.employee-table img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* Modal styling */
+.modal {
+  background: white;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 25%;
+  margin-top: 30px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form styling in modal */
+.add-employee-form,
+.edit-employee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-employee-form input,
+.edit-employee-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.but{
+  display: flex;
+  gap: 140px;
+}
+.add{
+  display: flex;
+  gap: 140px;
+}
+
+.add-employee-form button,
+.edit-employee-form button {
+  padding: 5px 10px;
+  background-color: #33862c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  margin-top: 20px;
+  
+}
+.edit-employee-form button {
+  padding: 5px 10px;
+  background-color: #33862c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  margin-top: 20px;
+  
+}
+
+.add-employee-form button:hover,
+.edit-employee-form button:hover {
+  background-color: #555;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Edit Button */
+.edit_butt {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit_butt:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+.edit_butt:active {
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+/* Delete Button */
+.delete_butt {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete_butt:hover {
+  background-color: #e53935; /* Darker red */
+}
+
+.delete_butt:active {
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+button.edit-button {
+  background-color: #4CAF50; /* Green */
+width: 40px;
+  color: white;
+  height: 30px;
+  border-radius: 5px;
+}
+
+button.delete-button {
+  margin-left: 10px;
+  background-color: #f44336; /* Red */
+  color: white;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+}
+.search-box {
+  margin-right: 950px;
+  margin-top: 50px;
+  padding: 8px;
+  border: 2px solid #0e0d0d;
+  border-radius: 4px;
+  width: 300px;
+ 
+}
+.btn-activate {
+  background-color: green;
+  margin-left: 10px;
+    color: white;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.btn-deactivate {
+  margin-left: 10px;
+    background-color: #f44336;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #aa2210;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #ee4f10;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.radiogender-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.radiogender-container label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radiogenderjdshd {
+  margin-right: 5px;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #4CAF50; /* Border color */
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.radiogenderjdshd:checked {
+  background-color: #4CAF50; /* Background color when selected */
+}
+
+.radiogenderjdshd:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white; /* Inner circle color */
+  transform: translate(-50%, -50%);
+}
+
+/* Styles for radio button labels */
+.radiogender-container label {
+  display: flex;
+  align-items: center;
+  font-size: 14px; /* Label font size */
+  color: #333; /* Label text color */
+}
+
+.modal {
+  width: 400px;
+  margin-top: 45px;
+}
+
+.form-groupasgdada {
+  margin-bottom: -7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-groupasgdada label {
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-groupasgdada input,
+.form-groupasgdada select {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 90%;
+}
+
+.radio-group,
+.course-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio-group label,
+.course-section label {
+  margin-right: 12px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.form-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.course-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between checkboxes */
+}
+
+.course-checkboxes label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Space between labels */
+}
+
+.course-checkboxes input[type="checkbox"] {
+  margin-right: 5px; /* Space between checkbox and label text */
+}

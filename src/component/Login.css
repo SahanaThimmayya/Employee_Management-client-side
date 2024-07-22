@@ -1,0 +1,153 @@
+/* Login.css */
+
+/* Container for the whole login page */
+.main-log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #1d1c1c transparent;
+  position: relative;
+}
+
+/* Container for the sliding effect */
+.login-container {
+  display: flex;
+  background-image: url('./Photo/five.jpg');
+background-size: cover;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+ 
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slider effect */
+.login-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #ff6f61, #d76d77);
+  z-index: -1;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Form container */
+.login-form {
+  background: rgba(240, 238, 238, 0.295); /* Semi-transparent background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 10 50px 70px rgba(129, 90, 90, 0.1);
+  width: 100%;
+  max-width: 400px;
+ margin-left: 50px;
+ margin-top: -40px;
+  z-index: 1;
+  
+  animation: slideIn 0.5s ease-out;
+}
+.loginheading{
+  margin-top: -20px;
+  color: #f1eceb;
+margin-left: 130px;
+font-weight: 700;
+font-size: 30px;
+}
+/* Add some design or image on the other side */
+.design-container {
+  background: url('') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+}
+
+/* Basic form styling */
+.form-group2343434553 {
+ margin-top: 20px;
+ font-weight: 800;
+ font-size: 20px;
+}
+.registerlink1234{
+  
+  font-weight: 800;
+ font-size: 20px;
+ margin-top: 20px;
+ margin-left: -10px;
+}
+.form-group2343434553 label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group2343434553 input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.butt_log {
+  background: #f1eceb;
+  color: #1a1717;
+  border: none;
+  margin-left: 100px;
+  padding: 0.75rem 2.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 800;
+ font-size: 20px;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.butt_log:hover {
+  background: #bbb5b5;
+}
+
+p {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+}

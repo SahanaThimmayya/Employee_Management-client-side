@@ -1,0 +1,176 @@
+/* Dashboard.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:rgb(29, 29, 39);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    cursor: pointer;
+  }
+  
+  .navbar-menu li:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .profile-icon {
+    cursor: pointer;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 100%; /* Position below the icon */
+    left: 60%;
+    transform: translateX(-80%);
+    background-color: #f7efef;
+    color: #1a0606;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 150px;
+    height: 100px;
+    margin-top: 5px; /* Slightly offset from the icon */
+    /* pointer-events: none; */
+  }
+  
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 60%;
+    transform: translateX(-80%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+    pointer-events: none;
+  }
+  
+  .navbar-profile:hover .tooltip {
+    opacity: 1;
+  }
+  
+  .log_dash {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #0c0303;
+    color: rgb(243, 237, 237);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .log_dash:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    margin-top: 50px; /* Adjust this value based on the height of your navbar */
+    padding: 20px;
+    height: 100vh; 
+    width: 100%;
+    background-color: rgb(210, 209, 214);
+  }
+  .content {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    min-height: 80vh;
+  }
+  
+  .welcome-message {
+    max-width: 600px;
+    margin-left: 350px;
+    margin-top: 80px;
+  }
+  
+  .welcome-message h1 {
+    font-size: 36px;
+    color: #2c3e50;
+  }
+  
+  .welcome-message p {
+    font-size: 18px;
+    color: #7f8c8d;
+  }
+  /* General styling for the navigation list */
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Space between menu items */
+}
+
+.nav-list li {
+  margin: 0;
+}
+
+.nav-list a {
+  text-decoration: none !important;
+  color:rgb(245, 241, 241); /* Default link color */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list:hover{
+ color: rgb(241, 248, 248);
+}
+.logo-image12344{
+  width: 70px;
+  height: 60px;
+  border-radius: 5px;
+}
+.employeelistspace{
+  margin-left: 40px;
+  text-decoration: none !important;
+}
+.navbar-menu .nav-list li a {
+  text-decoration: none; /* Remove underline for all links */
+}
+
+.navbar-menu .nav-list li a:hover {
+  text-decoration: none; /* Ensure underline is removed on hover */
+}
+
+.Addemployeejgdd{
+  margin-left: 500px;
+  margin-top: 500px;
+}
